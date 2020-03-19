@@ -18,6 +18,10 @@ expose:
     http: "true"
     tlsacme: "false"
     urltemplate: '{{.Service}}-{{.Namespace}}.{{.Domain}}'
+
+test-python-jenkinsx:
+  replicaCount: 2
+
 jenkins:
   Servers:
     Global: {}
